@@ -54,7 +54,7 @@ function initMap() {
 
 
     $.ajax({
-        url : '/gmap/insertall.php', // my php file
+        url : '../insertall.php', // my php file
         type : 'GET', // type of the HTTP request
         success : function(result){
             var obj = jQuery.parseJSON(result);
