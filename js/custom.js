@@ -196,7 +196,7 @@ function initMap() {
             lat = obj[i].lat;
             lng = obj[i].lng;
 
-            console.log(bus+address+stoppage+lat+lng);
+            //console.log(bus+address+stoppage+lat+lng);
             insertOnFirstLoad(bus, stoppage,lat, lng,address);
         }
     }
