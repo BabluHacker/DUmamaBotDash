@@ -58,7 +58,7 @@ function initMap() {
         type : 'GET', // type of the HTTP request
         success : function(result){
             var obj = jQuery.parseJSON(result);
-            console.log(obj);
+            //console.log(obj);
             insertMarker(obj)
 
         }
