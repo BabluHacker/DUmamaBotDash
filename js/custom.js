@@ -58,7 +58,7 @@ function initMap() {
         type : 'GET', // type of the HTTP request
         success : function(result){
             var obj = jQuery.parseJSON(result);
-            //console.log(obj);
+            console.log(obj);
             insertMarker(obj)
 
         }
@@ -196,7 +196,7 @@ function initMap() {
             lat = obj[i].lat;
             lng = obj[i].lng;
 
-            //console.log(bus+address+stoppage+lat+lng);
+            console.log(bus+address+stoppage+lat+lng);
             insertOnFirstLoad(bus, stoppage,lat, lng,address);
         }
     }
