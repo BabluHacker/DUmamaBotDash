@@ -81,10 +81,10 @@ function initMap() {
             map.setZoom(14);
             map.setCenter(results[0].geometry.location);
             // Set the position of the marker using the place ID and location.
-            /*marker.setPlace({
+            marker.setPlace({
                 placeId: place.place_id,
                 location: results[0].geometry.location
-            });*/
+            });
             //marker.setVisible(true);
             infowindowContent.children['place-name'].textContent = place.name;
             infowindowContent.children['place-id'].textContent = place.place_id;
