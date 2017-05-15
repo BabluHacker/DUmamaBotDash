@@ -66,7 +66,7 @@ function initMap() {
 
 
     autocomplete.addListener('place_changed', function() {
-        infowindow.close();
+        //infowindow.close();
         var place = autocomplete.getPlace();
 
         if (!place.place_id) {
@@ -88,10 +88,10 @@ function initMap() {
                 placeId: place.place_id,
                 location: results[0].geometry.location
             });
-            //marker.setVisible(true);
-            infowindowContent.children['place-name'].textContent = place.name;
-            infowindowContent.children['place-id'].textContent = place.place_id;
-            infowindowContent.children['place-address'].textContent = results[0].formatted_address;
+            marker.setVisible(true);
+            //infowindowContent.children['place-name'].textContent = place.name;
+            //infowindowContent.children['place-id'].textContent = place.place_id;
+            //infowindowContent.children['place-address'].textContent = results[0].formatted_address;
             //infowindow.open(map, marker);
         });
     });
