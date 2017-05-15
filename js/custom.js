@@ -40,10 +40,10 @@ function initMap() {
     var inputbar = document.getElementById('formin');
     infowindow.setContent(infowindowContent);
     var geocoder = new google.maps.Geocoder;
-    /*var marker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         map: map
     });
-    marker.addListener('click', function(event) {
+  /*  marker.addListener('click', function(event) {
         // clicking on marker open info window
         infowindow.open(map, marker);
 
@@ -81,9 +81,7 @@ function initMap() {
             map.setZoom(14);
             map.setCenter(results[0].geometry.location);
             // Set the position of the marker using the place ID and location.
-            var marker = new google.maps.Marker({
-                map: map
-            });
+
             marker.setPlace({
                 placeId: place.place_id,
                 location: results[0].geometry.location
