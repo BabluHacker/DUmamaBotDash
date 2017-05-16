@@ -16,7 +16,7 @@
 <body>
 <input id="pac-input" class="controls" type="text"
        placeholder="Enter a location">
-<form id="formin" method="post" action="insert.php">
+<form id="formin" method="post" action="insert.php" accept-charset="utf-8">
     <input id="name" name="name" class="controls" type="text" placeholder="Stoppage Name" required>*
     <input id="busname" name="busname" class="controls" type="text" placeholder="Bus Name" required>*<br>
     <b>Latitude : </b>
